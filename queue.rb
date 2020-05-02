@@ -20,6 +20,10 @@ class Queue
     end
 
     def peek
-        return @my_queue[0]
+        unless @my_queue.empty?
+            return @my_queue[0]
+        else
+            raise "Your Queue is empty."
+        end
     end
 end

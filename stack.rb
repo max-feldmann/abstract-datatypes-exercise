@@ -19,6 +19,10 @@ class Stack
     end
 
     def peek
-        return my_stack[-1]
+        unless @my_stack.empty?
+            return my_stack[-1]
+        else
+            raise "Your Stack is Empty."
+        end
     end
 end
