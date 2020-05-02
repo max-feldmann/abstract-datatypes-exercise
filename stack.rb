@@ -1,6 +1,6 @@
 class Stack
 
-    attr_reader :my_stack, :push
+    attr_reader :my_stack
     def initialize
         @my_stack = []
     end
